@@ -12,7 +12,9 @@ const (
 
 // === Statement (Stm) ===
 
-type Stm interface{}
+//first i created this interface as a umbrella to accept all types of statements
+
+type Stm any
 
 type CompoundStm struct {
 	Stm1 Stm
@@ -30,7 +32,7 @@ type PrintStm struct {
 
 // === Expression (Exp) ===
 
-type Exp interface{}
+type Exp any
 
 type IdExp struct {
 	Id string
@@ -53,7 +55,7 @@ type EseqExp struct {
 
 // === Expression List (ExpList) ===
 
-type ExpList interface{}
+type ExpList any
 
 type PairExpList struct {
 	Head Exp

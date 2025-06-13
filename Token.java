@@ -1,5 +1,6 @@
 package com.craftinginterpreters.lox;
 
+// here is defined a structure of a token
 class Token {
   final TokenType type;
   final String lexeme;
